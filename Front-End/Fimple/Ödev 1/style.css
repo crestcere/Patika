@@ -9,12 +9,12 @@
 
 .left {
     display: flex;
-    /*flex-direction: column;*/
+    flex-direction: column;
     border: 5px solid yellow;
 }
 
 .right {
     display: flex;
     border: 5px solid red;
-    /*flex-direction: column;*/
+    flex-direction: column;
 }
