@@ -8,7 +8,7 @@ async function getData() {
             items = await response.json();
             printTable(items);
             stopLoading();
-            console.table(items);
+            // console.table(items);
         } else {
             throw new Error("HTTP Error! status: " + response.status);
         }
