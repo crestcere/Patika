@@ -1,20 +1,31 @@
 .body {
     display: flex;
     /*flex-direction: column;*/
-    border: 5px solid green;
-    justify-content: space-between;
+    /*border: 5px solid green;*/
+    justify-content: space-evenly;
     align-items: center;
     flex: 1;
+    height: 90vh;
 }
 
 .left {
     display: flex;
     flex-direction: column;
-    border: 5px solid yellow;
+    /*border: 5px solid yellow;*/
+    /*height: 50vh;*/
 }
 
 .right {
     display: flex;
-    border: 5px solid red;
+    /*border: 5px solid red;*/
     flex-direction: column;
+    /*height: 50vh;*/
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: #864b4b;
 }

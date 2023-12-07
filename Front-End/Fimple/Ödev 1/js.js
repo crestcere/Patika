@@ -1,11 +1,14 @@
+import {loading, stopLoading} from "./loading.js";
+loading();
 let items;
-let loaded = false;
 async function getData() {
     try {
         const response = await fetch("https://jsonplaceholder.typicode.com/todos?_limit=5");
         if (response.ok) {
             items = await response.json();
             printTable(items);
+            stopLoading();
+            console.table(items);
         } else {
             throw new Error("HTTP Error! status: " + response.status);
         }
@@ -16,11 +19,15 @@ async function getData() {
 
 getData();
 
+window.changeCheck = (id) => {
+    const item = items.find(item => item.id === id);
+    if (item) {
+        item.completed = !item.completed;
+        printTable(items);
+    }
+}
+
 const printTable = (items) => {
-
-    // items.push({title: "Does it works?", completed: true});
-
-
     // Create temporary string that it will attach to innerHTML
     const right = document.querySelector(".right");
     let rights = `
@@ -31,23 +38,22 @@ const printTable = (items) => {
             </tr>
     `;
     for (let item of items) {
-        rights += `
-            <tr>
-                <td>${item.title}</td>
-        `;
         if (item.completed) {
             rights += `
-                    <td><input type="checkbox" checked disabled </td>
+                <tr>
+                    <td><s>${item.title}</s></td>
+                    <td><input type="checkbox" checked onchange="changeCheck(${item.id})" </td>
                 </tr>
             `;
         } else {
                 rights += `
-                    <td><input type="checkbox" disabled </td>
+                <tr>
+                    <td>${item.title}</td>
+                    <td><input type="checkbox" onchange="changeCheck(${item.id})"  </td>
                 </tr>
             `;
         }
     }
-
     // Bind string to innerHTML
     right.innerHTML = rights;
 }
@@ -81,5 +87,3 @@ form.onsubmit = async (e) => {
         formClear();
     }
 }
-
-// TODO: Loading
