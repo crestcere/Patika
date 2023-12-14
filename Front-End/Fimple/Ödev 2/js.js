@@ -9,6 +9,7 @@ const getData = () => {
 }
 getData();
 const searchData = (item) => {
+    const header = document.querySelector(".header");
     const search = document.querySelector(".search");
     const searchInside = (text = "") => {
         const value = item.filter(key => key.title.includes(text) || key.body.includes(text));
@@ -22,12 +23,12 @@ const searchData = (item) => {
 }
 
 const printData = (data) => {
-    const body = document.querySelector(".body");
+    const body = document.querySelector(".bodyy");
     let string = "";
     for (let items of data) {
         string += `<div class="card" id="${items.id}">`
-            string += `<div>Title: ${items.title}</div>`;
-            string += `<div>Body: ${items.body}</div>`;
+            string += `<div class="title">${items.title}</div>`;
+            string += `<div class="body">${items.body}</div>`;
             string += `<button type="button" onclick="deleteCard(${items.id})">Delete</button>`;
         string += `</div>`
 
