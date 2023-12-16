@@ -4,7 +4,6 @@ import Getdata from "./components/Getdata.js"
 function App() {
   return (
     <div className="App">
-        <input name={id} />
         <Getdata id={2}></Getdata>
     </div>
   );
