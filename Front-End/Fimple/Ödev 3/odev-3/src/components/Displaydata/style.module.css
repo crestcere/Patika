@@ -1,0 +1,32 @@
+.products {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*flex-wrap: wrap;*/
+    border: 1px solid #e0e1a3;
+    width: 30vw;
+    margin: 5px;
+}
+
+.img {
+    height: 200px;
+    width: 200px;
+    background-color: #f0f1c7;
+}
+
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+}
+.name {
+    background-color: #bfc07f;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.edit {
+    width: 100px;
+}
