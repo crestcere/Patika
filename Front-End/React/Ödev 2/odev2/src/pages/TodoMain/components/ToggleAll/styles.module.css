@@ -1,0 +1,11 @@
+.toggleBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.toggleItems {
+    display: flex;
+    /*flex-direction: column;*/
+    align-content: center;
+    justify-content: center;
+}
