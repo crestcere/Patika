@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fabff11-a7f5-47a5-9046-c956d7c9396f" name="Changes" comment="Initial Commit">
-      <change beforePath="$PROJECT_DIR$/Front-End/React/Ödev 4/crestbutton/example/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Front-End/React/Ödev 4/crestbutton/example/src/App.js" afterDir="false" />
-    </list>
+    <list default="true" id="1fabff11-a7f5-47a5-9046-c956d7c9396f" name="Changes" comment="Initial Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,9 +19,24 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Front-End/React/Ödev 4/crestbutton" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "crestcere"
+  }
+}]]></component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="025f0f24-b99e-421f-b1dc-6a405ba4ca0e" />
+        <option name="url" value="https://github.com/crestcere/Patika.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -73,7 +86,7 @@
       <workItem from="1704103084017" duration="4000" />
       <workItem from="1704103099676" duration="2592000" />
       <workItem from="1704106933249" duration="1129000" />
-      <workItem from="1704108081219" duration="277000" />
+      <workItem from="1704108081219" duration="423000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -91,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704108341901</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1704108370261</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704108370261</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
